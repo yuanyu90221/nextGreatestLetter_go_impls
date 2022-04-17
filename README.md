@@ -103,7 +103,7 @@ func nextGreatestLetter(letters []byte, target byte) byte {
 		}
 	}
 	if lowerBound >= lastIdx {
-		return letters[0]
+		lowerBound = 0
 	}
 	return letters[lowerBound]
 }

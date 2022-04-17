@@ -18,7 +18,7 @@ func nextGreatestLetter(letters []byte, target byte) byte {
 		}
 	}
 	if lowerBound >= lastIdx {
-		return letters[0]
+		lowerBound = 0
 	}
 	return letters[lowerBound]
 	// nextLarge := 'a' + (target+1-'a')%26
