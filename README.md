@@ -65,7 +65,6 @@ func nextGreatestLetter(letters []byte, target byte) byte {
 		}
 	}
 	mid := (upperBound + lowerBound) / 2
-	// fmt.Printf("target %c, mid: %c, nextLarge: %c\n", target, letters[mid], nextLarge)
 	if mid == len(letters)-1 && letters[mid] <= target {
 		return letters[0]
 	}
